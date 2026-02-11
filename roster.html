@@ -16,11 +16,77 @@
         </div>
         <ul class="nav-links">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="schedule.html">SCHEDULE</a></li>
-            <li><a href="roster.html" class="active">ROSTER</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="club info.html">CLUB INFO</a></li>
             <li><a href="history.html">HISTORY</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="roster.html" class="active">ROSTER</a></li>
+            <li><a href="schedule.html">SCHEDULE</a></li>
+            <li><a href="activity.html">ACTIVITY</a></li>
             <li><button class="search-btn"><i class="fas fa-search"></i></button></li>
         </ul>
     </nav>
 </header>
+
+<main class="roster-container">
+    <div class="filter-tabs">
+        <button class="tab active" data-filter="All">All</button>
+        <button class="tab" data-filter="Blazers">Blazers</button>
+        <button class="tab" data-filter="Falcons">Falcons</button>
+        <button class="tab" data-filter="Females">Females</button>
+    </div>
+
+    <div class="player-grid">
+        <div class="player-card filter-item" data-category="Blazers">
+            <figure class="player-image">
+                <img src="assets/players/player1.jpg" alt="Herbert Jantjies">
+                <figcaption class="player-overlay">
+                    <span class="position-label">Position</span>
+                    <p class="position-name">Outside Hitter</p>
+                </figcaption>
+            </figure>
+            <div class="player-info">
+                <div class="name-row">
+                    <h3>Herbert Jantjies</h3>
+                    <span class="player-number">#09</span>
+                </div>
+                <p class="player-status">Captain</p>
+            </div>
+        </div>
+
+        <div class="player-card filter-item" data-category="Falcons">
+            <figure class="player-image">
+                <img src="assets/players/player2.jpg" alt="Tulonga Indongo">
+                <figcaption class="player-overlay">
+                    <span class="position-label">Position</span>
+                    <p class="position-name">Libero</p>
+                </figcaption>
+            </figure>
+            <div class="player-info">
+                <div class="name-row">
+                    <h3>Tulonga Indongo</h3>
+                    <span class="player-number">#09</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="player-card filter-item" data-category="Blazers">
+            <figure class="player-image">
+                <img src="assets/players/player3.jpg" alt="Nody Hamukoto">
+                <figcaption class="player-overlay">
+                    <span class="position-label">Position</span>
+                    <p class="position-name">Middle Blocker</p>
+                </figcaption>
+            </figure>
+            <div class="player-info">
+                <div class="name-row">
+                    <h3>Nody Hamukoto</h3>
+                    <span class="player-number">#05</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -34,7 +34,7 @@ startCountdown();
 
 
 /*schedule page functionality*/
-/*customizing tabs*/
+/*customizing switching active*/
 const tabs = document.querySelectorAll('.tab');
 
 tabs.forEach(tab => {
@@ -44,28 +44,27 @@ tabs.forEach(tab => {
     });
 });
 
-
-/*filtering*/
+/*filtering for the tabs options*/
 document.addEventListener('DOMContentLoaded', () => {
+    if (document.getElementById("days")) {
+        startCountdown();
+    }
+
     const tabs = document.querySelectorAll('.tab');
-    const cards = document.querySelectorAll('.match-card');
+    const items = document.querySelectorAll('.filter-item');
 
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
-
             tabs.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
 
-            const filterValue = tab.textContent;
-
-            cards.forEach(card => {
-                const cardCategory = card.getAttribute('data-category');
-                
-                if (filterValue === 'All' || filterValue === cardCategory) {
-                    card.style.display = 'grid';
-                } else {
-                    card.style.display = 'none';
-                }
+            // Filtering
+            const filterValue = tab.getAttribute('data-filter') || tab.textContent;
+            
+            items.forEach(item => {
+                const category = item.getAttribute('data-category');
+                /*show all if filter value is "All"*/
+                item.style.display = (filterValue === 'All' || filterValue === category) ? "" : "none";
             });
         });
     });
