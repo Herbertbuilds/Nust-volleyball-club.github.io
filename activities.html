@@ -7,43 +7,108 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="site-wrapper">
     <header>
-    <nav>
-        <div class="logo">
-            <img src="assets/logo.jpg" class="logo-img">
-            <span class="logo-text">NUST VOLLEYBALL CLUB</span>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.jpg" class="logo-img">
+                <span class="logo-text">NUST VOLLEYBALL CLUB</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="club-info.html">CLUB INFO</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="roster.html">ROSTER</a></li>
+                <li><a href="schedule.html">SCHEDULE</a></li>
+                <li><a href="activities.html" class="active">ACTIVITIES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content-area">
+        <header class="hero-header">
+            <h1 class="hero-title">CLUB ACTIVITIES</h1>
+            <p class="hero-subtitle">Explore our weekly training sessions and recreational programs.</p>
+        </header>
+
+        <section class="primary-event-section">
+            <div class="primary-card">
+                <div class="event-details">
+                    <span class="badge-primary">PRIMARY EVENT</span>
+                    <h2 class="event-title">2026 AGM</h2>
+                    <p class="event-desc">Join us for the most important meeting of the year. We will discuss the club's budget, elect new board members, and outline the strategy for the 2026/27 season.</p>
+                    <div class="event-meta">
+                        <span><i class="fa-regular fa-calendar"></i> February 13, 2026</span>
+                        <span><i class="fa-solid fa-map-pin"></i> NUST Main Campus</span>
+                    </div>
+                </div>
+                <div class="event-visual-box">
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="secondary-container">
+            <div id="trials-event" class="secondary-card-wrapper">
+                <div class="secondary-card">
+                    <div class="date-box">
+                        <span class="month">FEB</span>
+                        <span class="day">16</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Volleyball Trials Extended</h3>
+                        <p>Trails have been extended to include more sessions for interested members.</p>
+                    </div>
+                    <div class="event-action">
+                        <div class="time-data">
+                            <span class="label">TIME</span>
+                            <span class="value">17:30 PM</span>
+                        </div>
+                        <button class="details-btn" onclick="toggleDropdown(this)">DETAILS</button>
+                    </div>
+                </div>
+                    <div class="details-dropdown">
+                        <div class="dropdown-inner">
+                            <p><strong>Requirements:</strong> Bring your own water bottle and dress accordingly.</p>
+                            <p><strong>Location:</strong> Windhoek Central Prison.</p>
+                        </div>
+                    </div>
+            </div>
+
+            <div id="preseason-event" class="secondary-card-wrapper">
+                <div class="secondary-card">
+                    <div class="date-box">
+                        <span class="month">FEB</span>
+                        <span class="day">28</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>CVA Pre-Season Tournament</h3>
+                        <p>Join us for our the CVA first ever pre-season tournament to prepare for the upcoming season.</p>
+                    </div>
+                    <div class="event-action">
+                        <div class="time-data">
+                            <span class="label">TIME</span>
+                            <span class="value">TBA</span>
+                        </div>
+                        <button class="details-btn" onclick="toggleDropdown(this)">DETAILS</button>
+                    </div>
+                </div>
+                    <div class="details-dropdown">
+                        <div class="dropdown-inner">
+                            <p><strong>Requirements:</strong> Wear appropriate sports attire and be prepared for physical activity.</p>
+                            <p><strong>Location:</strong> TBA</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="secondary-footer">
+        <div class="footer-divider"></div>
+        <div class="footer-bottom-wrap">
+            <p class="footer-copy">© 2026 NUST Sports Club. Excellence Through Sports.</p>
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="club-info.html">CLUB INFO</a></li>
-            <li><a href="history.html">HISTORY</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="roster.html">ROSTER</a></li>
-            <li><a href="schedule.html">SCHEDULE</a></li>
-            <li><a href="activities.html" class="active">ACTIVITIES</a></li>
-            <li><button class="search-btn"><i class="fas fa-search"></i></button></li>
-        </ul>
-    </nav>
-</header>
-
-
-
-
-
-
-
-
-
-
-
-
-<footer class="secondary-footer">
-    <div class="footer-divider"></div>
-    <div class="footer-bottom-wrap">
-        <p class="footer-copy">© 2026 NUST Sports Club. Excellence Through Sports.</p>
-    </div>
-</footer>
-<script src="script.js"></script>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

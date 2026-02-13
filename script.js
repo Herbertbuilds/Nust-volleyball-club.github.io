@@ -58,14 +58,40 @@ document.addEventListener('DOMContentLoaded', () => {
             tabs.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
 
-            // Filtering
+            // filtering
             const filterValue = tab.getAttribute('data-filter') || tab.textContent;
             
             items.forEach(item => {
                 const category = item.getAttribute('data-category');
-                /*show all if filter value is "All"*/
+                //show all if filter value is "All"
                 item.style.display = (filterValue === 'All' || filterValue === category) ? "" : "none";
             });
         });
     });
+});
+
+
+// dropdown functionality for the details button in the activities page
+function toggleDropdown(button) {
+    const cardWrapper = button.closest('.secondary-card-wrapper');
+    const dropdown = cardWrapper.querySelector('.details-dropdown');
+    
+    dropdown.classList.toggle('active');
+    
+    button.textContent = dropdown.classList.contains('active') ? 'CLOSE' : 'DETAILS';
+}
+
+window.addEventListener('load', () => {
+    const hash = window.location.hash;
+    
+    if (hash) {
+        const targetEvent = document.querySelector(hash);
+        
+        if (targetEvent) {
+            const detailsBtn = targetEvent.querySelector('.details-btn');
+            if (detailsBtn) {
+                detailsBtn.click();
+            }
+        }
+    }
 });

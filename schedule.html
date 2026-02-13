@@ -7,136 +7,135 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="site-wrapper">
     <header>
-    <nav>
-        <div class="logo">
-            <img src="assets/logo.jpg" class="logo-img">
-            <span class="logo-text">NUST VOLLEYBALL CLUB</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="club-info.html">CLUB INFO</a></li>
-            <li><a href="history.html">HISTORY</a></li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="roster.html">ROSTER</a></li>
-            <li><a href="schedule.html" class="active">SCHEDULE</a></li>
-            <li><a href="activities.html">ACTIVITIES</a></li>
-            <li><button class="search-btn"><i class="fas fa-search"></i></button></li>
-        </ul>
-    </nav>
-</header>
-<main class="schedule-container">
-    <header class="schedule-header">
-        <h1>Match Schedule</h1>
-        <p>Upcoming games and tournament dates for the 2026 season</p>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.jpg" class="logo-img">
+                <span class="logo-text">NUST VOLLEYBALL CLUB</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="club-info.html">CLUB INFO</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="roster.html">ROSTER</a></li>
+                <li><a href="schedule.html" class="active">SCHEDULE</a></li>
+                <li><a href="activities.html">ACTIVITIES</a></li>
+            </ul>
+        </nav>
     </header>
+    <main class="content-area schedule-content">
+        <header class="schedule-header">
+            <h1>Match Schedule</h1>
+            <p>Upcoming games and tournament dates for the 2026 season</p>
+        </header>
 
-    <div class="filter-tabs">
-        <button class="tab active">All</button>
-        <button class="tab">Blazers</button>
-        <button class="tab">Falcons</button>
-        <button class="tab">Females</button>
-    </div>
-    <div class="schedule-list">
-        <div class="match-card filter-item" data-category="Blazers">
-            <div class="match-date">
-                <time datetime="2026-02-28">
-                    <span class="day">28</span>
-                    <span class="month">FEB 2026</span>
-                </time>
+        <div class="filter-tabs">
+            <button class="tab active">All</button>
+            <button class="tab">Blazers</button>
+            <button class="tab">Falcons</button>
+            <button class="tab">Females</button>
+        </div>
+        <div class="schedule-list">
+            <div class="match-card filter-item" data-category="Blazers">
+                <div class="match-date">
+                    <time datetime="2026-02-28">
+                        <span class="day">28</span>
+                        <span class="month">FEB 2026</span>
+                    </time>
+                </div>
+
+                <div class="match-teams">
+                    <div class="team home">
+                        <span class="team-name">NUST Blazers</span>
+                    </div>
+                    
+                    <div class="vs-badge">VS</div>
+                    
+                    <div class="team away">
+                        <span class="team-name">UNAM Kings</span>
+                    </div>
+                </div>
+
+                <div class="match-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i> 15:00
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-map-marker-alt"></i> Unam Gym Hall
+                    </div>
+                </div>
             </div>
 
-            <div class="match-teams">
-                <div class="team home">
-                    <span class="team-name">NUST Blazers</span>
+            <div class="match-card filter-item" data-category="Falcons">
+                <div class="match-date">
+                    <time datetime="2026-02-28">
+                        <span class="day">28</span>
+                        <span class="month">FEB 2026</span>
+                    </time>
                 </div>
-                
-                <div class="vs-badge">VS</div>
-                
-                <div class="team away">
-                    <span class="team-name">UNAM Kings</span>
+
+                <div class="match-teams">
+                    <div class="team home">
+                        <span class="team-name">NUST Falcons</span>
+                    </div>
+                    
+                    <div class="vs-badge">VS</div>
+                    
+                    <div class="team away">
+                        <span class="team-name">Kudos</span>
+                    </div>
+                </div>
+
+                <div class="match-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i> 18:00
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-map-marker-alt"></i> Unam Gym Hall
+                    </div>
                 </div>
             </div>
 
-            <div class="match-meta">
-                <div class="meta-item">
-                    <i class="fas fa-clock"></i> 15:00
+            <div class="match-card filter-item" data-category="Females">
+                <div class="match-date">
+                    <time datetime="2026-02-28">
+                        <span class="day">28</span>
+                        <span class="month">FEB 2026</span>
+                    </time>
                 </div>
-                <div class="meta-item">
-                    <i class="fas fa-map-marker-alt"></i> Unam Gym Hall
+
+                <div class="match-teams">
+                    <div class="team home">
+                        <span class="team-name">NUST</span>
+                    </div>
+                    
+                    <div class="vs-badge">VS</div>
+                    
+                    <div class="team away">
+                        <span class="team-name">DTS</span>
+                    </div>
+                </div>
+
+                <div class="match-meta">
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i> 18:00
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-map-marker-alt"></i> Unam Gym Hall
+                    </div>
                 </div>
             </div>
         </div>
+    </main>
 
-        <div class="match-card filter-item" data-category="Falcons">
-            <div class="match-date">
-                <time datetime="2026-02-28">
-                    <span class="day">28</span>
-                    <span class="month">FEB 2026</span>
-                </time>
-            </div>
-
-            <div class="match-teams">
-                <div class="team home">
-                    <span class="team-name">NUST Falcons</span>
-                </div>
-                
-                <div class="vs-badge">VS</div>
-                
-                <div class="team away">
-                    <span class="team-name">Kudos</span>
-                </div>
-            </div>
-
-            <div class="match-meta">
-                <div class="meta-item">
-                    <i class="fas fa-clock"></i> 18:00
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-map-marker-alt"></i> Unam Gym Hall
-                </div>
-            </div>
+    <footer class="secondary-footer">
+        <div class="footer-divider"></div>
+        <div class="footer-bottom-wrap">
+            <p class="footer-copy">© 2026 NUST Sports Club. Excellence Through Sports.</p>
         </div>
-
-        <div class="match-card filter-item" data-category="Females">
-            <div class="match-date">
-                <time datetime="2026-02-28">
-                    <span class="day">28</span>
-                    <span class="month">FEB 2026</span>
-                </time>
-            </div>
-
-            <div class="match-teams">
-                <div class="team home">
-                    <span class="team-name">NUST</span>
-                </div>
-                
-                <div class="vs-badge">VS</div>
-                
-                <div class="team away">
-                    <span class="team-name">DTS</span>
-                </div>
-            </div>
-
-            <div class="match-meta">
-                <div class="meta-item">
-                    <i class="fas fa-clock"></i> 18:00
-                </div>
-                <div class="meta-item">
-                    <i class="fas fa-map-marker-alt"></i> Unam Gym Hall
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
-
-<footer class="secondary-footer">
-    <div class="footer-divider"></div>
-    <div class="footer-bottom-wrap">
-        <p class="footer-copy">© 2026 NUST Sports Club. Excellence Through Sports.</p>
-    </div>
-</footer>
-<script src="script.js"></script>
-</body>
+    </footer>
+    <script src="script.js"></script>
+    </body>
 </html>
