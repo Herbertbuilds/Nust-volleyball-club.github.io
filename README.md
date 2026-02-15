@@ -2,6 +2,8 @@
 
 Join me on my journey as I built a website for my **University Volleyball club**(Still in construction) but we add on day by day till completion
 
+![Project Demo](demo.gif)
+
 ## 🗺️ Site Map & Project Structure
 
 The project is organized into a flat structure for easy navigation and deployment:
