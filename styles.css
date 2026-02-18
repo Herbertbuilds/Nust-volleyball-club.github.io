@@ -145,13 +145,14 @@ nav {
 }
 
 .countdown-display {
-    font-size: clamp(3rem, 10vw, 4.5rem);
+    font-size: clamp(1.5rem, 10vw, 4.5rem);
     font-weight: 800;
     color: var(--yellow);
     margin: 1rem 0;
 }
 
 .join-btn {
+    margin-top: 20px;
     background-color: var(--lighter-blue);
     color: var(--white);
     padding: 12px 45px;
@@ -496,7 +497,7 @@ nav {
     }
 
     .countdown-display{
-        font-size: clamp(2rem, 8vw, 3.5rem);
+        font-size: clamp(1.5rem, 8vw, 3.5rem);
     }
 
     .nav-links {
@@ -1706,6 +1707,76 @@ nav {
     }
 }
 
+/* Ensure timeline year, icon and content are centered and roomy on small devices */
+@media (max-width: 480px) {
+    .timeline-item {
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+        padding: 0 12px;
+    }
+
+    .timeline-date-side,
+    .timeline-content-box {
+        text-align: center;
+        padding: 14px 12px;
+        width: 100%;
+    }
+
+    .timeline-year {
+        display: inline-block;
+        margin: 0 auto 8px;
+        font-size: 2.4rem;
+        line-height: 1;
+    }
+
+    .timeline-icon {
+        margin: 0 auto;
+        width: 72px;
+        height: 72px;
+        font-size: 1.6rem;
+    }
+
+    .timeline-content-box {
+        text-align: center;
+        padding: 20px;
+        font-size: 1rem;
+        border-radius: 20px;
+    }
+}
+
+/*fix history tab issue for smaller devices*/
+@media (max-width: 768px) {
+    .timeline-item { align-items: center; }
+    .timeline-date-side,
+    .timeline-content-box,
+    .right-style .timeline-date-side,
+    .right-style .timeline-content-box {
+        text-align: center !important;
+        width: 100%;
+        padding: 12px 14px !important;
+        box-sizing: border-box;
+    }
+
+    .timeline-status { margin-top: 6px; }
+}
+
+/* remove bullets for achievement list on smaller devices only */
+@media (max-width: 768px) {
+    .achievement-list {
+        list-style: none;
+        padding-left: 0;
+        margin: 8px auto 0;
+        left: 0;
+    }
+
+    .achievement-list li {
+        margin: 6px 0;
+    }
+
+    .achievement-list li::marker { content: none; }
+}
+
 
 /* global media/image*/
 img, picture, video, svg {
@@ -1769,11 +1840,12 @@ img, picture, video, svg {
         font-size: 1.25rem; 
     }
     .hero p {
-         font-size: 0.95rem; 
+        font-size: 0.95rem; 
         }
     .join-btn {
-         padding: 10px 28px; 
-         font-size: 0.95rem; 
+        margin-top: 12px;
+        padding: 10px 28px; 
+        font-size: 0.95rem; 
     }
 
     .news-section { 
@@ -1850,8 +1922,10 @@ img, picture, video, svg {
     .countdown-display { 
         font-size: clamp(1.6rem, 14vw, 2.6rem); 
     }
-    .join-btn { 
-        padding: 8px 18px; font-size: 0.9rem; 
+    .join-btn {
+        margin-top: 7px; 
+        padding: 8px 18px; 
+        font-size: 0.9rem; 
     }
     .news-card img { 
         height: 140px; 
@@ -1862,4 +1936,49 @@ img, picture, video, svg {
     .section-title { 
         font-size: 1.25rem; 
     }
+}
+
+/* Small devices: left-align the achievement list inside timeline cards */
+@media (max-width: 768px) {
+    .achievement-list {
+        list-style: none;
+        padding-left: 12px; /* slight indent from card edge */
+        margin: 8px 0 0 0;
+        text-align: left;
+        display: inline-block;
+        max-width: 90%;
+    }
+
+    .achievement-list li {
+        margin: 6px 0;
+    }
+
+    .achievement-list li::marker { content: none; }
+}
+
+
+/*gallary page*/
+.gallery-coming-soon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:6rem 1rem;
+    text-align:center;
+    color:var(--text-color,#222)
+}
+.gallery-coming-soon .coming-container{
+    max-width:760px
+}
+.gallery-coming-soon h1{
+    font-size:2rem;
+    margin-bottom:.5rem;
+    letter-spacing:.5px
+}
+.gallery-coming-soon p{
+    margin:0 0 1rem;
+    color:var(--muted,#555)
+}
+.gallery-coming-soon .placeholder{
+    opacity:.85;
+    color:var(--muted,#777)
 }
