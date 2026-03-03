@@ -1942,7 +1942,7 @@ img, picture, video, svg {
 @media (max-width: 768px) {
     .achievement-list {
         list-style: none;
-        padding-left: 12px; /* slight indent from card edge */
+        padding-left: 12px;
         margin: 8px 0 0 0;
         text-align: left;
         display: inline-block;
@@ -1954,31 +1954,4 @@ img, picture, video, svg {
     }
 
     .achievement-list li::marker { content: none; }
-}
-
-
-/*gallary page*/
-.gallery-coming-soon{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:6rem 1rem;
-    text-align:center;
-    color:var(--text-color,#222)
-}
-.gallery-coming-soon .coming-container{
-    max-width:760px
-}
-.gallery-coming-soon h1{
-    font-size:2rem;
-    margin-bottom:.5rem;
-    letter-spacing:.5px
-}
-.gallery-coming-soon p{
-    margin:0 0 1rem;
-    color:var(--muted,#555)
-}
-.gallery-coming-soon .placeholder{
-    opacity:.85;
-    color:var(--muted,#777)
 }
