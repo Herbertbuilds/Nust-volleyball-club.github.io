@@ -34,7 +34,7 @@ body {
     color: var(--text);
 }
 
-.site-wrapper {
+.site-wrapper{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -583,8 +583,11 @@ nav {
 .filter-tabs {
     display: flex;
     justify-content: center;
-    gap: 12px;
-    margin: 30px 0;
+    gap: 0.5rem;
+    margin-bottom: 2rem; 
+    flex-wrap: wrap;
+    padding: 0 1rem; 
+    margin-top: 10px;
 }
 
 .tab {
@@ -640,27 +643,19 @@ nav {
     transform: translateY(-6px);
 }
 
-.match-date {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border-right: 2px solid var(--side-bar-background);
-    padding-right: 20px;
-}
-
-.match-date .day {
-    font-size: 48px;
+.match-date { 
+    font-size: 3rem;
     font-weight: 900;
-    color: var(--lighter-blue);
-    line-height: 1;
+    color: #1a3a8a;
+    line-height: 1;            
+    text-align: center;        
+    border-right: 1px solid #eee; 
+    padding-right: 2rem;       
 }
 
-.match-date .month {
-    font-size: 12px;
-    font-weight: 700;
-    color: #94a3b8;
-    margin-top: 5px;
-    letter-spacing: 1px;
+.match-month{
+font-size: 1rem; 
+color: #999;
 }
 
 .team-name {
@@ -771,7 +766,8 @@ nav {
 .player-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, var(--lighter-blue), transparent);
+    bottom: 0;
+    background: linear-gradient(transparent, var(--lighter-blue));
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -782,7 +778,7 @@ nav {
     font-weight: 700;
 }
 
-.player-card:hover .player-overlay {
+.player-card:hover .player-overlay{
     opacity: 1;
 }
 
@@ -836,7 +832,7 @@ nav {
     }
 
     .tab{
-        font-size: 10px;
+        font-size: 15px;
 
     }
 
@@ -847,12 +843,13 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 350px;
         text-align: center;
     }
 
     .player-image {
         width: 100%;
-        max-width: 300px;
+        max-width: auto;
         height: auto;
     }
 
@@ -1608,106 +1605,103 @@ nav {
 }
 
 
-.timeline-item {
+/*history*/
+
+.history-section {
+    background-color: #fff;
+    padding: 80px 20px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    max-width: 1200px;
-    width: 100%;
-    margin: 40px auto;
-    gap: 10px;
-    padding: 0 18px;
 }
 
+.timeline-container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    border-left: 2px solid #eef0f2;
+    padding-left: 60px;
+    margin-left: 50px;
+}
 
-.timeline-date-side, 
-.timeline-content-box {
-    flex: 1;
-    padding: 0 40px;
-} 
+.timeline-item {
+    position: relative;
+    margin-bottom: 80px;
+}
 
+/*blue dot*/
+.timeline-dot {
+    position: absolute;
+    left: -71px;
+    top: 12px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--main-blue);
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px #fff; 
+    z-index: 2;
+}
 
-.timeline-date-side {
-    text-align: right;
+.timeline-header {
+    margin-bottom: 20px;
 }
 
 .timeline-year {
     display: block;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 900;
     color: var(--main-blue);
-    line-height: 1;
+    line-height: 0.9;
+    letter-spacing: -2px;
 }
 
 .timeline-status {
-    font-size: 1rem;
-    color: var(--gray-text);
+    font-size: 0.9rem;
+    color: #a0a0a0;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-top: 8px;
 }
 
-
-.timeline-icon {
-    width: 60px;
-    height: 60px;
-    background-color: var(--main-blue);;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--yellow);
-    font-size: 1.4rem;
-    flex-shrink: 0;
-}
-
-
+/* The Content Card */
 .timeline-content-box {
-    background: var(--white);
-    padding: 25px 30px;
-    border-radius: 25px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.06);
-    text-align: left;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-    hyphens: auto;
-    min-width: 0;
+    background: #fff;
+    padding: 40px 50px;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
 }
 
-
-.right-style {
-    flex-direction: row-reverse;
+.timeline-content-box p {
+    font-size: 1.15rem;
+    color: #4a5568;
+    line-height: 1.7;
+    margin: 0;
 }
 
-.right-style .timeline-date-side {
-    text-align: left;
-}
-
-.right-style .timeline-content-box {
-    text-align: right;
-}
-
-@media (max-width: 1024px) {
-    .timeline-item {
-        flex-direction: column;
-        gap: 20px;
-        width: 100%;
-        padding: 0 12px;
+/*media*/
+@media (max-width: 768px) {
+    .timeline-container {
+        padding-left: 40px;
+        margin-left: 20px;
     }
 
-    .timeline-date-side, 
+    .timeline-dot {
+        left: -51px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .timeline-year {
+        font-size: 2.8rem;
+    }
+
     .timeline-content-box {
-        padding: 0;
-        text-align: center;
-    }
-
-    .timeline-content-box { padding: 18px; font-size: 0.95rem; }
-
-    .right-style {
-        flex-direction: column;
+        padding: 25px;
+        border-radius: 20px;
     }
 }
 
-/* Ensure timeline year, icon and content are centered and roomy on small devices */
 @media (max-width: 480px) {
     .timeline-item {
         flex-direction: column;
@@ -1744,39 +1738,6 @@ nav {
         border-radius: 20px;
     }
 }
-
-/*fix history tab issue for smaller devices*/
-@media (max-width: 768px) {
-    .timeline-item { align-items: center; }
-    .timeline-date-side,
-    .timeline-content-box,
-    .right-style .timeline-date-side,
-    .right-style .timeline-content-box {
-        text-align: center !important;
-        width: 100%;
-        padding: 12px 14px !important;
-        box-sizing: border-box;
-    }
-
-    .timeline-status { margin-top: 6px; }
-}
-
-/* remove bullets for achievement list on smaller devices only */
-@media (max-width: 768px) {
-    .achievement-list {
-        list-style: none;
-        padding-left: 0;
-        margin: 8px auto 0;
-        left: 0;
-    }
-
-    .achievement-list li {
-        margin: 6px 0;
-    }
-
-    .achievement-list li::marker { content: none; }
-}
-
 
 /* global media/image*/
 img, picture, video, svg {
@@ -1954,4 +1915,8 @@ img, picture, video, svg {
     }
 
     .achievement-list li::marker { content: none; }
+}
+
+.secondary-footer {
+    bottom: 0;
 }
