@@ -10,43 +10,43 @@ const execData = [
         id: 2,
         name: "Herbert Jantjies", 
         role: "VICE CHAIRPERSON", 
-        image: "assets/executives/vice-chairperson.jpg" 
+        image: "assets/executives/vice-chairperson.webp" 
     },
     { 
         id: 3,
         name: "Esther Maiba", 
         role: "SECRETARY", 
-        image: "assets/executives/secretary.jpg" 
+        image: "assets/executives/secretary.webp" 
     },
     { 
         id: 4,
         name: "Dorothy Nambahu", 
         role: "TREASURER", 
-        image: "assets/executives/treasurer.jpeg" 
+        image: "assets/executives/treasurer.webp" 
     },
     { 
         id: 5,
         name: "Magano Isreal", 
         role: "TEAM MANAGER", 
-        image: "assets/executives/team-manager.jpg" 
+        image: "assets/executives/team-manager.webp" 
     },
     { 
         id: 6,
         name: "Japhet Uulenga", 
         role: "ASSISTANT TEAM MANAGER", 
-        image: "assets/executives/assistant-team-manager.jpeg" 
+        image: "assets/executives/assistant-team-manager.webp" 
     },
     { 
         id: 7,
         name: "Himetetjua Katjivena", 
         role: "KIT MANAGER", 
-        image: "assets/executives/kit-manager.jpeg" 
+        image: "assets/executives/kit-manager.webp" 
     },
     { 
         id: 8,
         name: "Motjiri Kuruuo", 
         role: "EQUIPMENT MANAGER", 
-        image: "assets/executives/equipment-manager.jpeg" 
+        image: "assets/executives/equipment-manager.webp" 
     }
 ];
 
@@ -55,20 +55,20 @@ const techStaffData = [
     { 
         id: 1,
         name: "Coach Eddy Uyepa", 
-        role: "COACH", 
-        image: "assets/executives/coach1.png" 
+        role: "Females COACH", 
+        image: "assets/executives/coach1.webp" 
     },
     { 
         id: 2,
         name: "Coach Likando Anthony Likando", 
-        role: "COACH", 
-        image: "assets/executives/coach2.jpg" 
+        role: "Males COACH", 
+        image: "assets/executives/coach2.webp" 
     },
     { 
         id: 3,
         name: "Coach Austin Tinashe", 
         role: "ASSISTANT COACH", 
-        image: "assets/executives/assistant-coach.jpeg" 
+        image: "assets/executives/assistant-coach.webp" 
     }
 ];
 

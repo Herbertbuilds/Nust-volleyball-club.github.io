@@ -7,7 +7,7 @@ const playersData = {
             number: "#11",
             position: "Middle Blocker",
             category: "Blazers",
-            image: "assets/players/player5.jpeg",
+            image: "assets/players/player5.webp",
             status: "Captain",
             execRole: "Kit Manager"
         },
@@ -17,7 +17,7 @@ const playersData = {
             number: "#07",
             position: "Libero",
             category: "Blazers",
-            image: "assets/placeholder_m.jpg",
+            image: "assets/placeholder_m.webp",
             status: "Vice Captain",
             execRole: null
         },
@@ -27,7 +27,7 @@ const playersData = {
             number: "#01",
             position: "Outside Hitter",
             category: "Blazers",
-            image: "assets/players/player1.jpg",
+            image: "assets/players/player1.webp",
             status: null,
             execRole: null
         },
@@ -47,7 +47,7 @@ const playersData = {
             number: "#04",
             position: "Libero",
             category: "Blazers",
-            image: "assets/players/player2.jpg",
+            image: "assets/players/player2.webp",
             status: null,
             execRole: null
         }
@@ -59,7 +59,7 @@ const playersData = {
             number: "#2",
             position: "Setter",
             category: "Falcons",
-            image: "assets/placeholder_m.jpg",
+            image: "assets/placeholder_m.webp",
             status: "Captain",
             execRole: null
         },
@@ -69,7 +69,7 @@ const playersData = {
             number: "#10",
             position: "Opposite Hitter",
             category: "Falcons",
-            image: "assets/placeholder_m.jpg",
+            image: "assets/placeholder_m.webp",
             status: "Vice Captain",
             execRole: null
         },
@@ -79,7 +79,7 @@ const playersData = {
             number: "#08",
             position: "Middle Blocker",
             category: "Falcons",
-            image: "assets/players/player4.jpg",
+            image: "assets/players/player4.webp",
             status: null,
             execRole: "Equipment Manager"
         },
@@ -91,7 +91,7 @@ const playersData = {
             number: "#15",
             position: "Middle Blocker",
             category: "Elites",
-            image: "assets/placeholder.jpg",
+            image: "assets/placeholder.webp",
             status: "Captain",
             execRole: null
         },
@@ -101,7 +101,7 @@ const playersData = {
             number: "#07",
             position: "Setter",
             category: "Elites",
-            image: "assets/placeholder.jpg",
+            image: "assets/placeholder.webp",
             status: "Vice Captain",
             execRole: null
         },
@@ -111,7 +111,7 @@ const playersData = {
             number: "#03",
             position: "Outside Hitter",
             category: "Elites",
-            image: "assets/executives/secretary.jpg",
+            image: "assets/executives/secretary.webp",
             status: null,
             execRole: "Secretary"
         },
@@ -121,7 +121,7 @@ const playersData = {
             number: "#04",
             position: "Setter",
             category: "Elites",
-            image: "assets/executives/treasurer.jpeg",
+            image: "assets/executives/treasurer.webp",
             status: null,
             execRole: "Treasurer"
         }
