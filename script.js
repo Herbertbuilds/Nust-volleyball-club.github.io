@@ -184,7 +184,7 @@ async function initDynamicCountdown() {
 
 // ============= RENDERING FUNCTIONS =============
 
-// Render Roster
+// Render Roster with Lazy Loading
 function renderRoster() {
     const playerGrid = document.getElementById('player-grid');
     if (!playerGrid || typeof playersData === 'undefined') return;
@@ -196,7 +196,10 @@ function renderRoster() {
             html += `
                 <div class="player-card filter-item" data-category="${player.category}">
                     <figure class="player-image">
-                        <img src="${player.image}" alt="${player.name}" onerror="this.src='assets/players/placeholder.jpg'">
+                        <img src="${player.image}" 
+                             loading="lazy" 
+                             alt="${player.name}" 
+                             onerror="this.src='assets/players/placeholder.jpg'">
                         <figcaption class="player-overlay">
                             <span class="position-label">Position</span>
                             <p class="position-name">${player.position}</p>
@@ -322,7 +325,7 @@ function renderSchedule() {
     scheduleList.innerHTML = html;
 }
 
-// Render Executive Committee
+// Render Executive Committee with Lazy Loading
 function renderExecutives() {
     const execGrid = document.querySelector('.exec-grid');
     if (!execGrid || typeof execData === 'undefined') return;
@@ -331,7 +334,12 @@ function renderExecutives() {
     execData.forEach(exec => {
         html += `
             <div class="exec-card">
-                <div class="exec-img-container"><img src="${exec.image}" alt="${exec.name}" onerror="this.src='assets/players/placeholder.jpg'"></div>
+                <div class="exec-img-container">
+                    <img src="${exec.image}" 
+                         loading="lazy" 
+                         alt="${exec.name}" 
+                         onerror="this.src='assets/players/placeholder.jpg'">
+                </div>
                 <p class="exec-role">${exec.role}</p>
                 <h4 class="exec-name">${exec.name}</h4>
             </div>
@@ -341,7 +349,7 @@ function renderExecutives() {
     execGrid.innerHTML = html;
 }
 
-// Render Technical Staff
+// Render Technical Staff with Lazy Loading
 function renderTechStaff() {
     const techGrid = document.querySelector('.tech-grid');
     if (!techGrid || typeof techStaffData === 'undefined') return;
@@ -352,7 +360,10 @@ function renderTechStaff() {
             <div class="tech-card">
                 <div class="role-ribbon">${staff.role}</div>
                 <div class="tech-img-wrapper">
-                    <img src="${staff.image}" alt="${staff.name}" onerror="this.src='assets/players/placeholder.jpg'">
+                    <img src="${staff.image}" 
+                         loading="lazy" 
+                         alt="${staff.name}" 
+                         onerror="this.src='assets/players/placeholder.jpg'">
                 </div>
                 <h3 class="tech-name">${staff.name}</h3>
             </div>
