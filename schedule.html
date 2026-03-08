@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NUST Volleyball Club</title>
+    <title>NUST Volleyball Club - Schedule</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -11,16 +11,15 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="assets/logo.jpg" class="logo-img">
+                <img src="assets/logo.jpg" class="logo-img" alt="NUST Volleyball Club Logo">
                 <span class="logo-text">NUST VOLLEYBALL CLUB</span>
             </div>
             <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-                <label for="menu-toggle" class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-                
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <ul class="nav-links">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="club-info.html">CLUB INFO</a></li>
@@ -31,6 +30,7 @@
             </ul>
         </nav>
     </header>
+    
     <main class="content-area schedule-content">
         <header class="schedule-header">
             <h1>Match Schedule</h1>
@@ -38,95 +38,14 @@
         </header>
 
         <div class="filter-tabs">
-            <button class="tab active">All</button>
-            <button class="tab">Blazers</button>
-            <button class="tab">Falcons</button>
-            <button class="tab">Females</button>
+            <button class="tab active" data-filter="All">All</button>
+            <button class="tab" data-filter="Blazers">Blazers</button>
+            <button class="tab" data-filter="Falcons">Falcons</button>
+            <button class="tab" data-filter="Females">Females</button>
         </div>
+        
         <div class="schedule-list">
-            <div class="match-card filter-item" data-category="Blazers">
-                <time datetime="2026-03-06" class="match-date">
-                    06 <br> 
-                    <span class="match-month">MAR 2026</span>
-                </time>
-
-                <div class="match-teams">
-                    <div class="team home">
-                        <span class="team-name">NUST Blazers</span>
-                    </div>
-                    
-                    <div class="vs-badge">VS</div>
-                    
-                    <div class="team away">
-                        <span class="team-name">UNAM Kings</span>
-                    </div>
-                </div>
-
-                <div class="match-meta">
-                    <div class="meta-item">
-                        <i class="fas fa-clock"></i> 15:00
-                    </div>
-                    <div class="meta-item">
-                        <i class="fas fa-map-marker-alt"></i> Unam Gym Hall
-                    </div>
-                </div>
-            </div>
-
-            <div class="match-card filter-item" data-category="Falcons">
-                <time datetime="2026-03-14" class="match-date">
-                    14 <br> 
-                    <span class="match-month">MAR 2026</span>
-                </time>
-
-                <div class="match-teams">
-                    <div class="team home">
-                        <span class="team-name">NUST Falcons</span>
-                    </div>
-                    
-                    <div class="vs-badge">VS</div>
-                    
-                    <div class="team away">
-                        <span class="team-name">Kudos</span>
-                    </div>
-                </div>
-
-                <div class="match-meta">
-                    <div class="meta-item">
-                        <i class="fas fa-clock"></i> 18:00
-                    </div>
-                    <div class="meta-item">
-                        <i class="fas fa-map-marker-alt"></i> Unam Gym Hall
-                    </div>
-                </div>
-            </div>
-
-            <div class="match-card filter-item" data-category="Females">
-                <time datetime="2026-03-21" class="match-date">
-                    21 <br> 
-                    <span class="match-month">MAR 2026</span>
-                </time>
-
-                <div class="match-teams">
-                    <div class="team home">
-                        <span class="team-name">NUST</span>
-                    </div>
-                    
-                    <div class="vs-badge">VS</div>
-                    
-                    <div class="team away">
-                        <span class="team-name">DTS</span>
-                    </div>
-                </div>
-
-                <div class="match-meta">
-                    <div class="meta-item">
-                        <i class="fas fa-clock"></i> 18:00
-                    </div>
-                    <div class="meta-item">
-                        <i class="fas fa-map-marker-alt"></i> Unam Gym Hall
-                    </div>
-                </div>
-            </div>
+            <!-- Schedule will be loaded dynamically from data/schedule.js -->
         </div>
     </main>
 
@@ -136,6 +55,8 @@
             <p class="footer-copy">© 2026 NUST Volleyball Club. Excellence Through Sports.</p>
         </div>
     </footer>
+    
+    <script src="data/schedule.js"></script>
     <script src="script.js"></script>
-    </body>
+</body>
 </html>

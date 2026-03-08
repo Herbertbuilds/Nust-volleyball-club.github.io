@@ -19,9 +19,17 @@ The project is organized into a flat structure for easy navigation and deploymen
 ├── styles.css           # Global styles
 ├── script.js            # Unified logic for timer & filtering
 └── assets/              # Images, logos, and player photos
-    ├── logo.jpg
-    ├── news/
-    └── players/
+│    ├── logo.jpg
+│    ├── news/
+│    └── players/
+│
+└── data/
+    ├── activities.js
+    ├── executives.js
+    ├── players.js
+    ├── schedule.js
+    └── timeline.js
+
 ```
 
 ## 🚀 Features

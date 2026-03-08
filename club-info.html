@@ -3,230 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NUST Volleyball Club</title>
+    <title>NUST Volleyball Club - Club Info</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-    <nav>
-        <div class="logo">
-            <img src="assets/logo.jpg" class="logo-img" alt="NUST Volleyball Club Logo">
-            <span class="logo-text">NUST VOLLEYBALL CLUB</span>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.jpg" class="logo-img" alt="NUST Volleyball Club Logo">
+                <span class="logo-text">NUST VOLLEYBALL CLUB</span>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="club-info.html" class="active">CLUB INFO</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="roster.html">ROSTER</a></li>
+                <li><a href="schedule.html">SCHEDULE</a></li>
+                <li><a href="activities.html">ACTIVITIES</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-info">
+        <div class="hero-content">
+            <h1>ABOUT THE CLUB</h1>
+            <p>Empowering student athletes through excellence in sports, discipline, and community spirit.</p>
         </div>
-        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-                <label for="menu-toggle" class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
+    </section>
+
+    <section class="mission-section">
+        <div class="mission-container">
+            <div class="mission-text">
+                <h2 class="side-title">OUR MISSION</h2>
+                <p>The NUST Volleyball Club provides a high performance environment for students to excel. We believe in building character, leadership, and building a family through competitive sports. Join our Family.</p>
+            </div>
+            <div class="mission-image">
+                <img src="assets/team-action.jpg" alt="NUST Athletes in action">
+            </div>
+        </div>
+    </section>
+
+    <section class="exec-section">
+        <h2 class="section-center-title" id="members">EXECUTIVE COMMITTEE</h2>
+        <div class="exec-grid">
+            <!-- Executive committee will be loaded dynamically from data/executives.js -->
+        </div>
+    </section>
+
+    <section class="tech-staff-section">
+        <h2 class="section-center-title">TECHNICAL STAFF</h2>
+        <div class="tech-grid">
+            <!-- Technical staff will be loaded dynamically from data/executives.js -->
+        </div>
+    </section>
+
+    <section class="team-leadership-container">
+        <div class="leadership-glass-card">
+            <h2 class="leadership-title">TEAM LEADERSHIP</h2>
+            <div class="teams-flex">
+                <!-- Team leadership will be loaded dynamically from data/player.js -->
+            </div>
+        </div>
+    </section>
+
+    <section class="training-section" id="training">
+        <div class="mega-card">
+            <div class="training-side">
+                <h2 class="training-title"><i class="fa-regular fa-clock"></i> TRAINING GROUNDS</h2>
+                <p class="training-note">
+                    All sessions are held at the 
+                    <a href="https://maps.app.goo.gl/P9LsiZFG2bY9Ao5B9" target="_blank" class="location-link">
+                        <strong>Windhoek Central Prison.</strong>
+                    </a> 
+                    Please ensure you arrive 15 minutes early for warm-ups.
+                </p>
                 
-        <ul class="nav-links">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="club-info.html" class="active">CLUB INFO</a></li>
-            <li><a href="history.html">HISTORY</a></li>
-            <li><a href="roster.html">ROSTER</a></li>
-            <li><a href="schedule.html">SCHEDULE</a></li>
-            <li><a href="activities.html">ACTIVITIES</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="hero-info">
-    <div class="hero-content">
-        <h1>ABOUT THE CLUB</h1>
-        <p>Empowering student athletes through excellence in sports, discipline, and community spirit.</p>
-    </div>
-</section>
-
-<section class="mission-section">
-    <div class="mission-container">
-        <div class="mission-text">
-            <h2 class="side-title">OUR MISSION</h2>
-            <p>The NUST Volleyball Club provides a high performance environment for students to excel. We believe in building character, leadership, and building a family through competitive sports, Join our Family.</p>
-        </div>
-
-        <div class="mission-image">
-            <img src="assets/team-action.jpg" alt="NUST Athletes in action">
-        </div>
-    </div>
-</section>
-
-<section class="exec-section">
-    <h2 class="section-center-title" id="members">EXECUTIVE COMMITTEE</h2>
-    
-    <div class="exec-grid">
-        <div class="exec-card">
-            <div class="exec-img-container"><img src="assets/players/player3.jpg" alt="Chairperson"></div>
-            <p class="exec-role">CHAIRPERSON</p>
-            <h4 class="exec-name">Nody Hamukoto</h4>
-        </div>
-
-        <div class="exec-card">
-            <div class="exec-img-container"><img src="assets/executives/vice-chairperson.jpg" alt="Vice Chairperson"></div>
-            <p class="exec-role">VICE CHAIRPERSON</p>
-            <h4 class="exec-name">Herbert Jantjies</h4>
-        </div>
-
-        <div class="exec-card">
-            <div class="exec-img-container"><img src="assets/executives/secretary.jpg" alt="Secretary"></div>
-            <p class="exec-role">SECRETARY</p>
-            <h4 class="exec-name">Esther Maiba</h4>
-        </div>
-
-        <div class="exec-card">
-            <div class="exec-img-container"><img src="assets/executives/treasurer.jpeg" alt="Treasurer"></div>
-            <p class="exec-role">TREASURER</p>
-            <h4 class="exec-name">Dorothy Nambahu</h4>
-        </div>
-
-        <div class="exec-card">
-            <div class="exec-img-container"><img src="assets/executives/team-manager.jpg" alt="Team Manager"></div>
-            <p class="exec-role">TEAM MANAGER</p>
-            <h4 class="exec-name">Magano Isreal</h4>
-        </div>
-
-        <div class="exec-card">
-            <div class="exec-img-container"><img src="assets/executives/assistant-team-manager.jpeg" alt="Assistant Team Manager"></div>
-            <p class="exec-role">ASSISTANT TEAM MANAGER</p>
-            <h4 class="exec-name">Japhet Uulenga</h4>
-        </div>
-
-        <div class="exec-card">
-            <div class="exec-img-container"><img src="assets/executives/kit-manager.jpeg" alt="Kit Manager"></div>
-            <p class="exec-role">KIT MANAGER</p>
-            <h4 class="exec-name">Himetetjua Katjivena</h4>
-        </div>
-
-        <div class="exec-card">
-            <div class="exec-img-container"><img src="assets/executives/equipment-manager.jpeg" alt="Equipment Manager"></div>
-            <p class="exec-role">EQUIPMENT MANAGER</p>
-            <h4 class="exec-name">Motjiri Kuruuo</h4>
-        </div>
-    </div>
-</section>
-
-<section class="tech-staff-section">
-    <h2 class="section-center-title">TECHNICAL STAFF</h2>
-    
-    <div class="tech-grid">
-        <div class="tech-card">
-            <div class="role-ribbon">COACH</div>
-            <div class="tech-img-wrapper">
-                <img src="assets/executives/coach1.png" alt="Coach Eddy Uyepa">
-            </div>
-            <h3 class="tech-name">Coach Eddy Uyepa</h3>
-        </div>
-
-        <div class="tech-card">
-            <div class="role-ribbon">COACH</div>
-            <div class="tech-img-wrapper">
-                <img src="assets/executives/coach2.jpg" alt="Coach Likando Anthony Likando">
-            </div>
-            <h3 class="tech-name">Coach Likando Anthony Likando</h3>
-        </div>
-
-        <div class="tech-card">
-            <div class="role-ribbon">ASSISTANT COACH</div>
-            <div class="tech-img-wrapper">
-                <img src="assets/executives/assistant-coach.jpeg" alt="Coach Austin Tinashe">
-            </div>
-            <h3 class="tech-name">Coach Austin Tinashe</h3>
-        </div>
-    </div>
-</section>
-
-<section class="team-leadership-container">
-    <div class="leadership-glass-card">
-        <h2 class="leadership-title">TEAM LEADERSHIP</h2>
-        
-        <div class="teams-flex">
-            <div class="team-column">
-                <h3 class="team-name-club">BLAZERS</h3>
-                <div class="leader-row">
-                    <span class="p-role">Captain</span><span class="p-name">Himeetjua Katjivena</span>
+                <div class="schedule-row">
+                    <span>Mon-Thu (Training)</span>
+                    <span class="time">17:30 - 20:00</span>
                 </div>
-                <div class="leader-row">
-                    <span class="p-role">Vice Captain</span> <span class="p-name">Shawn Ncube</span>
+                <div class="schedule-row">
+                    <span>Saturdays (Matches)</span>
+                    <span class="time">Depends on Fixtures</span>
                 </div>
             </div>
 
-            <div class="team-column">
-                <h3 class="team-name-club">FALCONS</h3>
-                <div class="leader-row">
-                    <span class="p-role">Captain</span> <span class="p-name">Wetuthiapi Tjilumbu</span>
-                </div>
-                <div class="leader-row">
-                    <span class="p-role">Vice Captain</span> <span class="p-name">Adebayor Fillemon</span>
-                </div>
-            </div>
-
-            <div class="team-column">
-                <h3 class="team-name-club">FEMALES</h3>
-                <div class="leader-row">
-                    <span class="p-role">Captain</span> <span class="p-name">Blessing Barandongo</span>
-                </div>
-                <div class="leader-row">
-                    <span class="p-role">Vice Captain</span> <span class="p-name">Unotjari Mauha</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="training-section" id="training">
-    <div class="mega-card">
-        <div class="training-side">
-           <h2 class="training-title"><i class="fa-regular fa-clock"></i> TRAINING GROUNDS</h2>
-            <p class="training-note">
-                All sessions are held at the 
-                <a href="https://maps.app.goo.gl/P9LsiZFG2bY9Ao5B9" target="_blank" class="location-link">
-                    <strong>Windhoek Central Prison.</strong>
-                </a> 
-            Please ensure you arrive 15 minutes early for warm-ups.
-             </p>
-            
-            <div class="schedule-row">
-                <span>Mon-Thu (Training)</span>
-                <span class="time">17:30 - 20:00</span>
-            </div>
-            <div class="schedule-row">
-                <span>Saturdays (Matches)</span>
-                <span class="time">Depends on Fixtures</span>
-            </div>
-        </div>
-
-        <div class="join-side">
-            <div class="join-card">
-                <h3>WANT TO JOIN?</h3>
-                <p>We are always looking for fresh talent. Whether you're a seasoned player or a beginner, come through during our training hours.</p>
-                
-                <div class="contact-method">
-                    <div class="icon-circle" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
-                    <div>
-                        <span class="contact-label">CONTACT US</span>
-                        <p><a href="tel:+2643128848" class="contact-value">+264 312 8848</a></p>
+            <div class="join-side">
+                <div class="join-card">
+                    <h3>WANT TO JOIN?</h3>
+                    <p>We are always looking for fresh talent. Whether you're a seasoned player or a beginner, come through during our training hours.</p>
+                    
+                    <div class="contact-method">
+                        <div class="icon-circle" aria-hidden="true"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <span class="contact-label">CONTACT US</span>
+                            <p><a href="tel:+2643128848" class="contact-value">+264 312 8848</a></p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="contact-method">
-                    <div class="icon-circle" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
-                    <div>
-                        <span class="contact-label">EMAIL US</span>
-                        <p><a href="mailto:nustvolleyclub@gmail.com" class="contact-value">nustvolleyclub@gmail.com</a></p>
+                    <div class="contact-method">
+                        <div class="icon-circle" aria-hidden="true"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <span class="contact-label">EMAIL US</span>
+                            <p><a href="mailto:nustvolleyclub@gmail.com" class="contact-value">nustvolleyclub@gmail.com</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer class="secondary-footer">
-    <div class="footer-divider"></div>
-    <div class="footer-bottom-wrap">
-        <p class="footer-copy">© 2026 NUST Volleyball Club. Excellence Through Sports.</p>
-    </div>
-</footer>
-<script src="script.js"></script>
+    <footer class="secondary-footer">
+        <div class="footer-divider"></div>
+        <div class="footer-bottom-wrap">
+            <p class="footer-copy">© 2026 NUST Volleyball Club. Excellence Through Sports.</p>
+        </div>
+    </footer>
+
+    <script src="data/executives.js"></script>
+    <script src="data/player.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
