@@ -16,6 +16,7 @@ The project is organized into a flat structure for easy navigation and deploymen
 ├── history.html         # Club background and achievements
 ├── club info.html       # Club Management, contact and training details
 ├── activity.html        # Latest news and training feed
+├── join.html            # Form for new members who want to join
 ├── styles.css           # Global styles
 ├── script.js            # Unified logic for timer & filtering
 └── assets/              # Images, logos, and player photos

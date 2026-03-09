@@ -1920,3 +1920,226 @@ img, picture, video, svg {
 .secondary-footer {
     bottom: 0;
 }
+
+
+
+
+
+
+
+/*join page*/
+
+.join-form-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container {
+    background: var(--white);
+    border-radius: 30px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 800px;
+}
+
+.join-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--text);
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+}
+
+.required {
+    color: #e53e3e;
+    margin-left: 2px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 14px 18px;
+    border: 2px solid var(--light-gray-border);
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: var(--white);
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--lighter-blue);
+    box-shadow: 0 0 0 3px rgba(26, 58, 138, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group select::placeholder {
+    color: #a0aec0;
+    font-size: 0.95rem;
+}
+
+.form-submit {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.submit-btn {
+    background: var(--lighter-blue);
+    color: var(--white);
+    border: none;
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+    background: var(--main-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(26, 58, 138, 0.3);
+}
+
+.submit-btn i {
+    transition: transform 0.3s ease;
+}
+
+.submit-btn:hover i {
+    transform: translateX(5px);
+}
+
+/*success message*/
+.success-message {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.success-message i {
+    font-size: 5rem;
+    color: #10b981;
+    margin-bottom: 25px;
+}
+
+.success-message h3 {
+    font-size: 2rem;
+    color: var(--text);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.success-message p {
+    color: var(--gray-text);
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back-btn {
+    background: transparent;
+    border: 2px solid var(--lighter-blue);
+    color: var(--lighter-blue);
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: var(--lighter-blue);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/*media*/
+@media (max-width: 768px) {
+    .join-form-section {
+        margin: 30px auto;
+    }
+    
+    .form-container {
+        padding: 30px 25px;
+    }
+    
+    .form-group input,
+    .form-group select {
+        padding: 12px 15px;
+    }
+    
+    .submit-btn {
+        padding: 14px 30px;
+        font-size: 1rem;
+    }
+    
+    .success-message i {
+        font-size: 4rem;
+    }
+    
+    .success-message h3 {
+        font-size: 1.6rem;
+    }
+    
+    .success-message p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 25px 20px;
+    }
+    
+    .form-group label {
+        font-size: 0.9rem;
+    }
+    
+    .submit-btn {
+        padding: 12px 25px;
+    }
+    
+    .back-btn {
+        padding: 10px 25px;
+    }
+}
+
+/* Tablet specific */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .join-form-section {
+        max-width: 700px;
+    }
+    
+    .form-container {
+        padding: 40px;
+    }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUST Volleyball Club - Join Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body class="site-wrapper">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/logo.webp" class="logo-img" alt="NUST Volleyball Club Logo">
+                <span class="logo-text">NUST VOLLEYBALL CLUB</span>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="club-info.html">CLUB INFO</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="roster.html">ROSTER</a></li>
+                <li><a href="schedule.html">SCHEDULE</a></li>
+                <li><a href="activities.html">ACTIVITIES</a></li>
+                <li><a href="join.html" class="active">JOIN US</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="content-area">
+        <header class="hero-header">
+            <h1 class="hero-title">JOIN THE FAMILY</h1>
+            <p class="hero-subtitle">Ready to take the court? Fill out the form below if you are interested.</p>
+        </header>
+
+        <section class="join-form-section">
+            <div class="form-container">
+                <form id="joinForm" class="join-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name <span class="required">*</span></label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentNumber">Student Number</label>
+                        <input type="text" id="studentNumber" name="studentNumber" placeholder="e.g. 221045678 (optional)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Experience Level <span class="required">*</span></label>
+                        <select id="experience" name="experience" required>
+                            <option value="" disabled selected>Select your experience level</option>
+                            <option value="beginner">Beginner (Never played)</option>
+                            <option value="intermediate">Intermediate (1-2 years)</option>
+                            <option value="advanced">Advanced (3+ years)</option>
+                            <option value="school">School Team Experience</option>
+                            <option value="club">Played for another club</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="position">Preferred Position <span class="required">*</span></label>
+                        <select id="position" name="position" required>
+                            <option value="" disabled selected>Select your preferred position</option>
+                            <option value="setter">Setter</option>
+                            <option value="outside">Outside Hitter</option>
+                            <option value="opposite">Opposite Hitter</option>
+                            <option value="middle">Middle Blocker</option>
+                            <option value="libero">Libero</option>
+                            <option value="flexible">Flexible / Any position</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="+264 XX XXX XXXX" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="submit-btn">SUBMIT APPLICATION <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </form>
+
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>Application Submitted!</h3>
+                    <p>Thank you for your interest in joining NUST Volleyball Club. We'll contact you soon.</p>
+                    <button onclick="resetJoinForm()" class="back-btn">Submit Another Application</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="secondary-footer">
+        <div class="footer-divider"></div>
+        <div class="footer-bottom-wrap">
+            <p class="footer-copy">© 2026 NUST Volleyball Club. Excellence Through Sports.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

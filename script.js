@@ -520,6 +520,64 @@ function initFilters() {
     });
 }
 
+// ============= JOIN FORM FUNCTIONS =============
+
+// Handle join form submission
+function handleJoinSubmit(event) {
+    if (event) event.preventDefault();
+    
+    const form = document.getElementById('joinForm');
+    if (!form) return;
+    
+    // Hide form, show success message
+    form.style.display = 'none';
+    const successMsg = document.getElementById('successMessage');
+    if (successMsg) {
+        successMsg.style.display = 'block';
+    }
+    
+    // Scroll to top of form section smoothly
+    const formSection = document.querySelector('.join-form-section');
+    if (formSection) {
+        formSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    // Collect form data for console (optional)
+    console.log('Join form submitted:', {
+        name: document.getElementById('fullName')?.value,
+        studentNumber: document.getElementById('studentNumber')?.value || 'Not provided',
+        experience: document.getElementById('experience')?.value,
+        position: document.getElementById('position')?.value,
+        phone: document.getElementById('phone')?.value,
+        email: document.getElementById('email')?.value
+    });
+    
+    return false;
+}
+
+// Reset join form
+function resetJoinForm() {
+    const form = document.getElementById('joinForm');
+    const successMsg = document.getElementById('successMessage');
+    
+    if (form) {
+        form.reset();
+        form.style.display = 'block';
+    }
+    
+    if (successMsg) {
+        successMsg.style.display = 'none';
+    }
+}
+
+// Initialize join form event listener
+function initJoinForm() {
+    const form = document.getElementById('joinForm');
+    if (form) {
+        form.addEventListener('submit', handleJoinSubmit);
+    }
+}
+
 // ============= EVENT LISTENERS =============
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -577,4 +635,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize filter tabs
     initFilters();
+    
+    // Initialize join form
+    initJoinForm();
 });
